@@ -1,6 +1,7 @@
 # Logs
 logs
 *.log
+npm-debug.log*
 
 # Runtime data
 pids
@@ -13,6 +14,9 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 build/unit.xml
+
+# nyc test coverage
+.nyc_output
 
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
@@ -30,3 +34,10 @@ build/Release
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
+build/Release
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
