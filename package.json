@@ -1,0 +1,31 @@
+{
+  "name": "plinko",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=6.3.0"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node src/index.js",
+    "dev": "NODE_ENV=development nodemon --inspect -L src/index.js | bunyan",
+    "test": "NODE_ENV=test mocha ./src --recursive",
+    "coverage": "NODE_ENV=test istanbul cover --config ./.istanbul.yml  _mocha -- ./src --recursive --reporter xunit --reporter-options output=build/xunit.xml",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -a",
+    "style-check": "eslint ."
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "conventional-changelog": "^0.5.3",
+    "eslint": "^3.2.2",
+    "git-hooks": "^1.1.0",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
+    "proxyquire": "^1.7.10"
+  },
+  "dependencies": {
+    "lodash": "^4.14.1",
+    "random-js": "^1.0.8",
+    "request": "^2.74.0",
+    "request-promise": "^4.1.0"
+  }
+}
