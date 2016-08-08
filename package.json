@@ -1,5 +1,5 @@
 {
-  "name": "plinko",
+  "name": "plinko-js",
   "version": "0.5.0",
   "main": "src/index.js",
   "engines": {
