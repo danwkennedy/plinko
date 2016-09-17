@@ -41,7 +41,8 @@ describe('Client', () => {
       let client = new Client(hosts);
 
       let expectedOptions = {
-        url: 'localhost/test-this/thing'
+        url: 'localhost/test-this/thing',
+        json: true
       };
 
       return client.send('/test-this/thing').then(() => calledWith(requestStub, expectedOptions));
@@ -57,7 +58,8 @@ describe('Client', () => {
         },
         qs: {
           pageSize: 1
-        }
+        },
+        json: true
       };
 
       return client.send('/', { qs: { pageSize: 1 }}).then(() => calledWith(requestStub, expectedOptions));
@@ -69,7 +71,8 @@ describe('Client', () => {
 
       let expectedOptions = {
         url: 'localhost/',
-        method: 'GET'
+        method: 'GET',
+        json: true
       };
 
       return client.get('/').then(() => calledWith(requestStub, expectedOptions));
@@ -81,7 +84,8 @@ describe('Client', () => {
 
       let expectedOptions = {
         url: 'localhost/',
-        method: 'POST'
+        method: 'POST',
+        json: true
       };
 
       return client.post('/').then(() => calledWith(requestStub, expectedOptions));
@@ -93,7 +97,8 @@ describe('Client', () => {
 
       let expectedOptions = {
         url: 'localhost/',
-        method: 'HEAD'
+        method: 'HEAD',
+        json: true
       };
 
       return client.head('/').then(() => calledWith(requestStub, expectedOptions));
@@ -105,7 +110,8 @@ describe('Client', () => {
 
       let expectedOptions = {
         url: 'localhost/',
-        method: 'PATCH'
+        method: 'PATCH',
+        json: true
       };
 
       return client.patch('/').then(() => calledWith(requestStub, expectedOptions));
@@ -117,7 +123,8 @@ describe('Client', () => {
 
       let expectedOptions = {
         url: 'localhost/',
-        method: 'PUT'
+        method: 'PUT',
+        json: true
       };
 
       return client.put('/').then(() => calledWith(requestStub, expectedOptions));

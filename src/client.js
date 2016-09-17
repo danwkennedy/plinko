@@ -4,11 +4,15 @@ const Failover = require('./failover');
 const request = require('request-promise');
 const _ = require('lodash');
 
+const DEFAULT_CONFIG = {
+  json: true
+};
+
 module.exports = class Client {
 
   constructor(hosts, defaults, balancer = Balancer.RANDOM, failover = Failover.BASIC) {
     this.hosts = hosts;
-    this.defaults = defaults;
+    this.defaults = _.merge({}, DEFAULT_CONFIG, defaults);
     this.balancer = balancer;
     this.failover = failover;
   }
