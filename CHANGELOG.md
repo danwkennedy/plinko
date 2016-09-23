@@ -20,3 +20,13 @@
 
 
 
+<a name="0.5.3"></a>
+## [0.5.3](//compare/0.5.2...v0.5.3) (2016-09-23)
+
+
+### Bug Fixes
+
+* **client:** call the failover's handler 1d9bd6b
+
+
+
