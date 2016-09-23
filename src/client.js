@@ -66,6 +66,6 @@ module.exports = class Client {
     let url = `${ host }${ path }`;
     options.url = url;
 
-    return request(options).catch(this.failover.handleError);
+    return request(options).catch(this.failover.strategy);
   }
 }
