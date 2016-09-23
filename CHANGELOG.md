@@ -30,3 +30,13 @@
 
 
 
+<a name="0.5.4"></a>
+## [0.5.4](//compare/0.5.3...v0.5.4) (2016-09-23)
+
+
+### Bug Fixes
+
+* **client:** call the failover strategy directly b4e0aac
+
+
+
