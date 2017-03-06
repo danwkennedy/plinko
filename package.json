@@ -1,7 +1,7 @@
 {
-  "name": "plinko-js",
-  "version": "0.5.4",
-  "main": "src/index.js",
+  "name": "@plinko/core",
+  "version": "0.6.0",
+  "main": "src",
   "engines": {
     "node": ">=6.3.0"
   },
@@ -20,12 +20,5 @@
     "git-hooks": "^1.1.0",
     "jest": "^19.0.2"
   },
-  "dependencies": {
-    "koa-compose": "^3.2.1",
-    "lodash": "^4.14.1",
-    "node-fetch": "^1.6.3",
-    "random-js": "^1.0.8",
-    "request": "^2.74.0",
-    "request-promise": "^4.1.1"
-  }
+  "dependencies": {}
 }
