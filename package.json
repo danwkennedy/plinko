@@ -8,8 +8,8 @@
   "scripts": {
     "start": "NODE_ENV=production node src/index.js",
     "dev": "NODE_ENV=development nodemon --inspect -L src/index.js | bunyan",
-    "test": "NODE_ENV=test mocha ./src --recursive",
-    "coverage": "NODE_ENV=test istanbul cover --config ./.istanbul.yml  _mocha -- ./src --recursive --reporter xunit --reporter-options output=build/xunit.xml",
+    "test": "NODE_ENV=test jest --env=node",
+    "coverage": "NODE_ENV=test jest --env=node --config=jest.coverage.config.json",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -a",
     "style-check": "eslint ."
   },
@@ -18,12 +18,12 @@
     "conventional-changelog": "^0.5.3",
     "eslint": "^3.2.2",
     "git-hooks": "^1.1.0",
-    "istanbul": "^0.4.4",
-    "mocha": "^2.5.3",
-    "proxyquire": "^1.7.10"
+    "jest": "^19.0.2"
   },
   "dependencies": {
+    "koa-compose": "^3.2.1",
     "lodash": "^4.14.1",
+    "node-fetch": "^1.6.3",
     "random-js": "^1.0.8",
     "request": "^2.74.0",
     "request-promise": "^4.1.1"
