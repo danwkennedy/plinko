@@ -1,4 +1,4 @@
-const Client = require('.');
+const Client = require('./client');
 const Response = require('./response');
 
 test(`the request is passed to the middleware`, () => {
