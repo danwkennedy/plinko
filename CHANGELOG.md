@@ -46,3 +46,13 @@
 
 
 
+<a name="0.6.1"></a>
+## [0.6.1](//compare/0.6.0...v0.6.1) (2017-03-06)
+
+
+### Features
+
+* **package:** move the client to client.js and expose all the helper classes a16a0e4
+
+
+

@@ -1,6 +1,6 @@
 {
   "name": "@plinko/core",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "main": "src",
   "engines": {
     "node": ">=6.3.0"
