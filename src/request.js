@@ -1,7 +1,8 @@
 const Url = require('url');
 const Headers = require('./headers');
+const Body = require('./body');
 
-module.exports = class Request {
+module.exports = class Request extends Body {
 
   constructor(input, {
     method = 'GET',
@@ -14,10 +15,10 @@ module.exports = class Request {
     referrer = '',
     integrity = ''
   } = {}) {
+    super(body);
     this.url = Url.parse(input, true);
     this.method = method;
     this.headers = new Headers(headers);
-    this.body = body;
     this.mode = mode;
     this.credentials = credentials;
     this.cache = cache;
