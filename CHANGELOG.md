@@ -56,3 +56,13 @@
 
 
 
+<a name="0.6.2"></a>
+## [0.6.2](//compare/0.6.1...v0.6.2) (2017-03-07)
+
+
+### Bug Fixes
+
+* **Request:** make Request extend Body 5f4f457
+
+
+
