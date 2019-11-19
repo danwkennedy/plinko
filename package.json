@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "lodash": "^4.14.1",
-    "random-js": "^1.0.8",
+    "random-js": "^2.1.0",
     "request": "^2.74.0",
     "request-promise": "^4.1.1"
   }
