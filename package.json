@@ -16,7 +16,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "conventional-changelog": "^0.5.3",
-    "eslint": "^3.2.2",
+    "eslint": "^6.6.0",
     "git-hooks": "^1.1.0",
     "istanbul": "^0.4.4",
     "mocha": "^2.5.3",
