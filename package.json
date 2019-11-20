@@ -14,7 +14,7 @@
     "style-check": "eslint ."
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.2.0",
     "conventional-changelog": "^3.1.15",
     "eslint": "^6.6.0",
     "git-hooks": "^1.1.0",
